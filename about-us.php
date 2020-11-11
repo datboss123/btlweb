@@ -30,8 +30,8 @@
     </div>
     <!-- ********** -->
 
-    <!-- Header -->
-    <div class="">
+    <!-- Thông tin trên thanh tiêu đề -->
+    <header class="">
         <nav class="navbar navbar-expand-lg">
             <div class="container">
                 <a class="navbar-brand" href="index.php">
@@ -71,7 +71,7 @@
                 </div>
             </div>
         </nav>
-    </div>
+</header>
 
     <!-- Page Content -->
     <div class="page-heading about-heading header-text"

@@ -2,6 +2,8 @@ body {
     font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
     text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 p {
@@ -111,6 +113,7 @@ a.filled-button:hover {
 }
 
 #preloader {
+    overflow: hidden;
     background: #f33f3f;
     left: 0;
     right: 0;
@@ -138,19 +141,23 @@ a.filled-button:hover {
     width: 10px;
     height: 10px;
     border-radius: 100%;
+    -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
     position: absolute;
     opacity: 0;
     width: 50px;
     height: 50px;
+    -webkit-animation: jumper 1s 0s linear infinite;
     animation: jumper 1s 0s linear infinite;
 }
 
 #preloader .jumper>div:nth-child(2) {
+    -webkit-animation-delay: 0.33333s;
     animation-delay: 0.33333s;
 }
 
 #preloader .jumper>div:nth-child(3) {
+    -webkit-animation-delay: 0.66666s;
     animation-delay: 0.66666s;
 }
 
@@ -185,7 +192,7 @@ a.filled-button:hover {
 }
 
 
-/* Header Style */
+/* Chỉnh header  */
 
 header {
     position: absolute;
@@ -193,7 +200,6 @@ header {
     width: 100%;
     height: 80px;
     background-color: #232323;
-    transition: all 0.3s ease-in-out 0s;
 }
 
 header .navbar {
@@ -227,6 +233,8 @@ header .navbar {
     color: #f33f3f!important;
 }
 
+/* hết chỉnh header*/
+
 .navbar .navbar-brand {
     float: left;
     margin-top: -12px;
@@ -238,6 +246,9 @@ header .navbar {
     text-transform: uppercase;
     font-size: 24px;
     font-weight: 700;
+    -webkit-transition: all .3s ease 0s;
+    -moz-transition: all .3s ease 0s;
+    -o-transition: all .3s ease 0s;
     transition: all .3s ease 0s;
 }
 
@@ -366,8 +377,12 @@ header .navbar {
 }
 
 .owl-banner .owl-dots {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: center;
+    -webkit-justify-content: center;
     justify-content: center;
     position: absolute;
     left: 50%;
