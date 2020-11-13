@@ -1,4 +1,4 @@
-<div class="row">
+<div class="rowdat">
     <div class="col-md-12">
         <div class="section-heading">
             <h2>Liên hệ với chúng tôi</h2>
